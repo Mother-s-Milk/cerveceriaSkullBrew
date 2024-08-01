@@ -1,3 +1,11 @@
+/*Sizes
+1440
+1024
+768
+425
+375
+320*/
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -5,7 +13,7 @@
 }
 
 body {
-    font-family: 'Quicksand';
+    font-family: 'Quicksand', Arial;
 }
 
 ul {
@@ -19,6 +27,7 @@ a {
 /*Flex*/
 .flex {
     display: flex;
+    /*align-items: center;*/
 }
 
 .fdc {
@@ -37,15 +46,88 @@ a {
     align-items: center;
 }
 
+.js {
+    justify-content: start;
+}
+
+/*Heading y P*/
+.wt {
+    color: white;
+}
+
+.bt {
+    color: black;
+}
+
+.bh {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.mh {
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.sh {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.bp {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: justify;
+    line-height: 21px;
+}
+
+/*Margin*/
+.bmb {
+    margin-bottom: 30px;
+}
+
+.mb3 {
+    margin-bottom: 30px;
+}
+
+.mr4 {
+    margin-right: 45px;
+}
+
+.seccion {
+    padding: 30px 120px 45px;
+}
+
+/********/
 /*Header*/
+/********/
+#burgerMenu {
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    transition: 0.5s all;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+    padding: 18px;
+    cursor: pointer;
+}
+
+#burgerMenu > i {
+    color: white;
+    font-size: 21px;
+}
+
 #headerPrincipal {
-    height: 100vh;
     width: 100%;
     background-image: url('imgGenerales/header.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 30px 150px;
+    position: relative;
 }
 
 #headerPrincipal::before {
@@ -60,7 +142,7 @@ a {
 }
 
 .navHeader {
-    margin-bottom: 15px;
+    margin-bottom: 90px;
 }
 
 .navHeader,
@@ -77,7 +159,10 @@ a {
 
 .enlacesNav > li {
     margin: 0 18px;
-    display: inline-block;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .enlacesNav > li > a {
@@ -114,54 +199,27 @@ a {
     color: white;
 }
 
-.cervezaNovedad img {
-    width: 510px;
+/*********/
+/*Novedad*/
+/*********/
+/*.novedadHeader > div {
+    width: 50%;
+}*/
+
+.novedadHeader img {
+    width: 480px;
     display: block;
 }
 
-.wt {
-    color: white;
-}
-
-.bt {
-    color: black;
-}
-
-.bh {
-    font-size: 30px;
-    margin-bottom: 30px;
-    font-weight: 700;
-}
-
-.mh {
-    font-size: 21px;
-    font-weight: 600;
-}
-
-.sh {
-    font-size: 12px;
-    font-weight: 600;
-}
-
-.bp {
-    font-size: 18px;
-    font-weight: 400;
-    text-align: justify;
-    line-height: 21px;
-}
-
-.novedadHeader p {
-    margin-bottom: 30px;
-}
-
 .boton {
-    padding: 12px 18px;
+    padding: 9px 15px;
     background-color: black;
     text-align: center;
+    vertical-align: middle;
     color: white;
     border: none;
     font-size: 21px;
-    font-family: 'Quicksand';
+    font-family: 'Quicksand', Arial;
     font-weight: 600;
     border-radius: 15px;
     transition: 0.5s all;
@@ -172,8 +230,10 @@ a {
     background-color: darkred;
 }
 
-.seccion {
-    padding: 30px 90px 45px 90px;
+/************/
+/*Destacadas*/
+/************/
+#seccionDestacadas {
     text-align: center;
 }
 
@@ -570,3 +630,259 @@ a {
 }
 
 /*696 líneas aproximadamente*/
+
+
+@media only screen and (max-width: 1024px) {
+    .mb3 {
+        margin-bottom: 15px;
+    }
+
+    .seccion {
+        padding: 15px 90px 30px;
+    }
+
+    /********/
+    /*Header*/
+    /********/
+    .navHeader {
+        margin-bottom: 45px;
+    }
+
+    .enlacesNav > li {
+        margin: 0 12px;
+    }
+
+    .enlacesNav > li > a {
+        padding: 3px 9px;
+    }
+
+    .socialIconNav {
+        height: 36px;
+        width: 36px;
+        margin-left: 9px;
+    }
+
+    /*********/
+    /*Novedad*/
+    /*********/
+    .novedadHeader img {
+        width: 330px;
+    }
+} /*Fin 1024px*/
+
+@media only screen and (max-width: 768px) {
+    .bh {
+        font-size: 27px;
+    }
+
+    .bp {
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    .mb3 {
+        margin-bottom: 15px;
+    }
+
+    .mr4 {
+        margin-right: 30px;
+    }
+
+    .seccion {
+        padding: 15px 45px 30px;
+    }
+
+    /********/
+    /*Header*/
+    /********/
+    #burgerMenu {
+        display: flex;
+    }
+
+    .navHeader {
+        margin-bottom: 45px;
+    }
+
+    .logoNav img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .enlacesNav {
+        display: none;
+    }
+
+    .iconosNav {
+        flex-direction: column;
+    }
+
+    .socialIconNav {
+        height: 30px;
+        width: 30px;
+        margin-bottom: 3px;
+    }
+
+    .socialIconNav > i {
+        font-size: 21px;
+    }
+
+    /*********/
+    /*Novedad*/
+    /*********/
+    .novedadHeader img {
+        width: 300px;
+    }
+
+    .boton {
+        padding: 9px 15px;
+        font-size: 18px;
+    }
+} /*Fin 768px*/
+
+
+@media only screen and (max-width: 425px) {
+    /*Heading y P*/
+    .bh {
+        font-size: 24px;
+    }
+
+    .mh {
+        font-size: 21px;
+        font-weight: 600;
+    }
+
+    .sh {
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    .bp {
+        font-size: 18px;
+        font-weight: 400;
+        text-align: justify;
+        line-height: 21px;
+    }
+
+    .mb3 {
+        margin-bottom: 15px;
+    }
+
+    .mr4 {
+        margin-right: 0;
+    }
+
+    .seccion {
+        padding: 15px 30px 30px;
+    }
+
+    /********/
+    /*Header*/
+    /********/
+    .navHeader {
+        margin-bottom: 45px;
+    }
+
+    .logoNav img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .socialIconNav {
+        height: 30px;
+        width: 30px;
+    }
+
+    .socialIconNav > i {
+        font-size: 21px;
+    }
+
+    /*********/
+    /*Novedad*/
+    /*********/
+    .novedadHeader {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .novedadHeader img {
+        width: 270px;
+    }
+
+    .novedadHeader h1 {
+        margin-top: 15px;
+    }
+
+    .novedadHeader p {
+        display: none;
+    }
+
+    .boton {
+        padding: 9px 15px;
+        font-size: 18px;
+    }
+} /*Fin 425px*/
+
+@media only screen and (max-width: 425px) {
+    /*Heading y P*/
+    .bh {
+        font-size: 24px;
+    }
+
+    .mh {
+        font-size: 21px;
+        font-weight: 600;
+    }
+
+    .sh {
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    .bp {
+        font-size: 18px;
+        font-weight: 400;
+        text-align: justify;
+        line-height: 21px;
+    }
+
+    .mb3 {
+        margin-bottom: 15px;
+    }
+
+    .mr4 {
+        margin-right: 0;
+    }
+
+    .seccion {
+        padding: 9px 24px 30px;
+    }
+
+    /********/
+    /*Header*/
+    /********/
+    .navHeader {
+        margin-bottom: 36px;
+    }
+
+    .logoNav img {
+        width: 75px;
+        height: 75px;
+    }
+
+    .socialIconNav {
+        height: 30px;
+        width: 30px;
+        margin-bottom: 1.5px;
+    }
+
+    .socialIconNav > i {
+        font-size: 18px;
+    }
+
+    /*********/
+    /*Novedad*/
+    /*********/
+    .novedadHeader img {
+        width: 210px;
+    }
+} /*Fin 375px*/

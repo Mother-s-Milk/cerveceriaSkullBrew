@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skull Brew</title>
     <link rel="icon" href="imgGenerales/logo.png" type="img/png" sizes="16x16" title="Icono de la cervecería">
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,13 +17,16 @@
     <script defer src="scripts.js" type="text/javascript"></script>
 </head>
 <body>
-    <header id="headerPrincipal" class="flex fdc jsb">
+    <header id="headerPrincipal" class="seccion flex fdc">
         <nav class="navHeader flex jsb aic">
+            <div id="burgerMenu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
             <div class="logoNav">
                 <a href="#"><img src="imgGenerales/logoNombre.png" alt="Logo de Skull Brew"></a>
             </div>
-            <ul class="enlacesNav">
-                <li><a href="#">Inicio</a></li>
+            <ul class="enlacesNav flex">
+                <li><a href="#headerPrincipal">Inicio</a></li>
                 <li><a href="#seccionDestacadas">Cervezas</a></li>
                 <li><a href="#seccionNosotros">Nosotros</a></li>
                 <li><a href="#seccionContacto">Contacto</a></li>
@@ -33,13 +37,13 @@
                 <a href="https://www.whatsapp.com/" class="socialIconNav" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
             </div>
         </nav>
-        <div class="novedadHeader flex jc aic">
-            <div class="cervezaNovedad">
-                <img src="vasosLatas/2.png" alt="Cerveza novedad">
+        <div class="novedadHeader flex jsb aic">
+            <div class="mr4">
+                <img src="vasosLatas/novedad2.png" alt="Cerveza novedad">
             </div>
             <div>
-                <h1 class="wt bh">¡Descubre nuestra nueva cerveza!</h1>
-                <p class="bp wt">
+                <h1 class="wt bh mb3">¡Descubre nuestra nueva cerveza!</h1>
+                <p class="bp wt mb3">
                 Una exquisita cerveza de estilo Pale Ale, cuidadosamente
                 elaborada con una mezcla única de lúpulos aromáticos y maltas
                 selectas. Con su refrescante sabor cítrico y su suave final floral,
@@ -50,9 +54,10 @@
             </div>
         </div>
     </header>
+    <!---->
     <main>
         <section id="seccionDestacadas" class="seccion">
-            <h1 class="bh bt">-CERVEZAS-
+            <h1 class="bh bt bmb">-CERVEZAS-
             <br>
             DE LA CASA</h1>
             <div class="destacadas flex jsb">
@@ -114,7 +119,7 @@
             <button type="button" class="boton">VER TODAS</button>
         </section>
 
-        <hr class="divisorSeccion">
+        <!-- <hr class="divisorSeccion">
 
         <section id="seccionProductos" class="seccion">
             <h1 class="bh bt">-MAS PRODUCTOS-
@@ -199,7 +204,7 @@
             <h1 class="bh bt">-NOSOTROS-</h1>
             <div class="infoNosotros flex jc aic">
                 <div id="slider">
-                    <!-- <img src="nosotros/1.jpg" alt=""> -->
+                    <img src="nosotros/1.jpg" alt="">
                 </div>
                 <div class="nosotrosInfo">
                     <h1 class="bh bt">NUESTRA HISTORIA</h1>
@@ -253,9 +258,9 @@
                     </div>              
                 </div>
             </div>
-        </section>
+        </section> -->
     </main>
-    <footer id="footer">
+    <!-- <footer id="footer">
         <div class="info">
             <div class="infoFooter">
                 <img src="imgGenerales/logo.png" alt="">
@@ -272,6 +277,6 @@
             </div>
         </div>
         <p>Skull Brew Cervecería © Todos los derechos reservados</p>
-    </footer>
+    </footer> -->
 </body>
 </html>
