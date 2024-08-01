@@ -822,7 +822,7 @@ a {
     }
 } /*Fin 425px*/
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 375px) {
     /*Heading y P*/
     .bh {
         font-size: 24px;
